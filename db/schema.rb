@@ -45,8 +45,8 @@ ActiveRecord::Schema[7.0].define(version: 2024_08_25_110331) do
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["prototype_id"], name: "index_comments_on_prototype_id"
-    t.index ["user_id"], name: "index_comments_on_user_id"
+    t.index ["prototype_id"], name: "index_commtents_on_prototype_id"
+    t.index ["user_id"], name: "index_commtents_on_user_id"
   end
 
   create_table "prototypes", charset: "utf8mb4", force: :cascade do |t|
